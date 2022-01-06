@@ -3,7 +3,7 @@ defmodule Identicon do
   Generate github-like identicons from a string
   """
 
-  def main(input, filename \\ "identicon") do
+  def main(input, filename) do
     input
     |> hash_input()
     |> pick_color()
@@ -16,6 +16,7 @@ defmodule Identicon do
 
   def save_image(image_obj, filename) do
     File.write("#{filename}.png", image_obj)
+    "Generated #{filename}.png"
   end
 
   def draw_image(%Identicon.Image{color: color, pixel_map: pixel_map}) do

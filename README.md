@@ -4,9 +4,10 @@ Generate github-like identicon image for an input string.
 
 # Usage
 
+need to have elixir or erlang installed
+
 ```
-iex -S mix
-Identicon.main("qiushi")
+./identicon <name> --output=<file-path>
 ```
 
 ![](identicon.png)
