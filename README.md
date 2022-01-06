@@ -10,4 +10,4 @@ need to have elixir or erlang installed
 ./identicon <name> --output=<file-path>
 ```
 
-![](identicon.png)
+![](qiushi.png)
